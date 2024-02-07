@@ -36,6 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const price = article.dataset.price;
         const id = article.dataset.id; 
 
-        article.addEventListener("click", handleAddItemToCart(id, name, price));
+        article.addEventListener("click", () => handleAddItemToCart(id, name, price));
     }
 });
